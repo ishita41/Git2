@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+class ComplexNum
+{
+    int real,imaginary;
+    public:
+void read()
+{
+    cout<<"\n Enter real part";
+    cin>>real;
+    cout<<"\n Enter imaginary part";
+    cin>>imaginary;
+}
+void display()
+{
+    if (imaginary<0)
+    cout<<real<<imaginary<<"i";
+    else
+    cout<<real<<"+"<<imaginary<<"i";
+}
+};
+int main()
+{
+    ComplexNum c1;
+    c1.read();
+    c1.display();
+    return 0;
+
+  ComplexNum c2;
+
+    c2.display();
+    return 0;
+}
